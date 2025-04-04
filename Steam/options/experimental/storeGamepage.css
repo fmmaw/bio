@@ -1,0 +1,328 @@
+/*
+& Remove after experimental
+*/
+#store_header .content {
+    width: calc(1260px - 16px - 16px) !important;
+    max-width: unset !important;
+}
+
+/* heart, store, game, header */
+.game_bg.application .queue_overflow_ctn [id*="add_to_wishlist_area"] .btn_medium span::before {
+    content: "\f47a" !important;
+    font-size: 22px;
+    color: rgb(var(--blue));
+    font-family: FluentSystemIcons-Regular !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+.game_bg.application .queue_overflow_ctn [id*="add_to_wishlist_area"] .btn_medium span:has(img)::before {
+    content: "\f47e" !important;
+    font-family: FluentSystemIcons-Filled !important;
+}
+
+/* prohibitedmultiple, store, game, header */
+.game_bg.application .queue_overflow_ctn #queue_btn_ignore_menu .btn_medium span::before {
+    content: "\e9da" !important;
+    font-size: 22px;
+    color: #8e8e8e;
+    font-family: FluentSystemIcons-Filled !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+.game_bg.application .queue_overflow_ctn #queue_btn_ignore_menu .btn_medium span:hover::before {
+    color: #fff;
+}
+
+
+/* arrow right, store, game, header */
+.game_bg.application .queue_overflow_ctn .next_in_queue_content >span::before {
+    content: "\f182" !important;
+    font-size: 22px;
+    color: rgb(var(--yellow));
+    font-family: FluentSystemIcons-Filled !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* follow, store, game, header */
+.game_bg.application .queue_overflow_ctn .queue_btn_follow .btn_medium::before {
+    content: "\f56f" !important;
+    font-size: 22px;
+    color: rgb(var(--blue));
+    font-family: FluentSystemIcons-Regular !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+.game_bg.application .queue_overflow_ctn .queue_btn_follow .btn_medium.queue_btn_active::before {
+    content: "\f576" !important;
+    font-family: FluentSystemIcons-Filled !important;
+}
+
+
+
+
+body.v6.game_bg.application .page_content_ctn,
+body.v6.game_bg.application .page_content {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+
+/*
+& Haeder
+*/
+
+/*
+! Title Area
+*/
+.game_bg.application .page_title_area .apphub_HeaderStandardTop {
+    min-height: unset;
+    margin: 0 0 16px;
+}
+
+
+/* Game Path */
+.game_bg.application .page_title_area .breadcrumbs {
+    display: none;
+}
+
+/* Game Title */
+.game_bg.application .page_title_area .apphub_HomeHeaderContent {
+    max-width: unset;
+}
+
+.game_bg.application .page_title_area .apphub_AppName {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+
+/* Community Hub */
+.game_bg.application .page_title_area .apphub_OtherSiteInfo {
+    display: none;
+}
+
+
+/* Sale Event Banner */
+.game_bg.application .saleEventBannerLink {
+    display: none;
+}
+
+
+/*
+! Wishlist/Follow Area
+*/
+
+.game_bg.application .queue_overflow_ctn {
+    position: absolute;
+    top: -48px;
+    right: 0;
+}
+
+.game_bg.application .queue_overflow_ctn .queue_ctn {
+    width: unset;
+    margin: 0;
+    background: unset;
+}
+
+.game_bg.application .queue_overflow_ctn .queue_actions_ctn {
+    display: flex;
+    gap: 6px;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+
+/* Buttons */
+.game_bg.application .queue_overflow_ctn .btn_medium {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    color: #fff !important;
+    background: unset;
+    background-color: rgb(var(--blue), .2);
+}
+.game_bg.application .queue_overflow_ctn .btn_medium:hover {
+    background: unset !important;
+    background-color: rgb(var(--blue), .4) !important;
+}
+
+.game_bg.application .queue_overflow_ctn .btn_medium span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0 12px;
+}
+.game_bg.application .queue_overflow_ctn .btn_medium span img {
+    display: none;
+}
+
+/* Wishlist */
+.game_bg.application .queue_overflow_ctn #wishlistDropDown {
+    display: none;
+}
+
+/* Follow */
+.game_bg.application .queue_overflow_ctn .queue_btn_follow .btn_medium {
+    padding: 0 12px;
+}
+.game_bg.application .queue_overflow_ctn .queue_btn_follow span {
+    display: none;
+}
+
+/* Ignore */
+.game_bg.application .queue_overflow_ctn .queue_btn_ignore {
+    display: none;
+}
+.game_bg.application .queue_overflow_ctn #queue_btn_ignore_menu .btn_medium {
+    display: flex;
+    height: 32px;
+    background-color: rgb(var(--color-2));
+}
+.game_bg.application .queue_overflow_ctn #queue_btn_ignore_menu .btn_medium:hover {
+    background-color: rgb(var(--color-2)) !important;
+}
+.game_bg.application .queue_overflow_ctn #queue_btn_ignore_menu .btn_medium span {
+    padding: 0 6px;
+}
+
+/* Add a note Augmented Steam plugin */
+.game_bg.application .queue_overflow_ctn #esi-user-note-button {
+    display: none;
+}
+
+/* View Your Queue */
+.game_bg.application .queue_overflow_ctn .btnv6_blue_hoverfade.right {
+    display: none;
+}
+
+/* Queue */
+.game_bg.application .queue_overflow_ctn .next_in_queue_area {
+    order: 1;
+}
+
+.game_bg.application .queue_overflow_ctn .queue_controls_description,
+.game_bg.application .queue_overflow_ctn .queue_reason_description {
+    display: none;
+}
+
+.game_bg.application .queue_overflow_ctn .btn_next_in_queue {
+    width: unset;
+    height: unset;
+    margin: 0;
+    background: unset;
+}
+
+.game_bg.application .queue_overflow_ctn .next_in_queue_content {
+    padding: 0 12px;
+    border-radius: 8px;
+    background-color: rgb(var(--yellow), .4);
+}
+.game_bg.application .queue_overflow_ctn .next_in_queue_content:hover {
+    background-color: rgb(var(--yellow), .6);
+}
+.game_bg.application .queue_overflow_ctn .next_in_queue_content span {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    font-size: 0px;
+}
+.game_bg.application .queue_overflow_ctn .next_in_queue_content .queue_sub_text {
+    display: none;
+}
+
+
+
+/* Clear *what ever* */
+.queue_actions_ctn div[style*="clear"] {
+    display: none;
+}
+
+
+
+/*
+& Game Media
+*/
+.game_bg.application .block.game_media_and_summary_ctn {
+    position: relative;
+}
+
+.game_bg.application .game_background_glow {
+    margin: 0;
+    padding: 0;
+    background: unset;
+}
+.game_bg.application .game_background_glow #game_highlights {
+    background: unset;
+}
+
+
+
+/*
+& Game Purchase / Infos etc.
+*/
+
+
+
+
+/*
+& Sidebar
+*/
+
+/*
+! Details 
+*/
+.game_bg.application #game_highlights .rightcol {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: rgb(var(--color-2));
+}
+
+
+/* Banner */
+.game_bg.application #game_highlights .rightcol .game_header_image_ctn {
+    margin-bottom: 6px;
+}
+.game_bg.application #game_highlights .rightcol .game_header_image_full {
+    border-radius: 8px;
+}
+
+
+/* Description */
+.game_bg.application #game_highlights .rightcol .game_description_snippet {
+    padding: 0;
+    line-height: unset;
+}
+
+/* Divider */
+.game_bg.application #game_highlights .rightcol .glance_ctn_responsive_left::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin: 12px 0;
+    border-radius: 8px;
+    background-color: rgb(var(--color-1));
+}
